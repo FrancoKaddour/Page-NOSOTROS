@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Básica - Nosotros</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://api.fontshare.com/v2/css?f[]=bespoke-sans@300,301,400,401,500,501,700,701,800,801,1,2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- CSS Modules -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/loader.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/mapa.css">
+    <link rel="stylesheet" href="styles/footer-newsletter.css">
+    <link rel="stylesheet" href="styles/nosotros.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader-container" id="loaderContainer">
+        <div class="color-sweep" id="colorSweep"></div>
+        <div class="text-content" id="textContent">
+            <div class="brand-text">
+                <div class="brand-line">LA</div>
+                <div class="brand-line">BÁSICA</div>
+                <div class="brand-line small">
+                    <div class="word-container">
+                        <div class="word active" id="word1">PASTELERÍA</div>
+                        <div class="word" id="word2">TENTACIÓN</div>
+                        <div class="word" id="word3">DULZURA</div>
+                        <div class="word" id="word4">PASTELERÍA</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="navbar" id="navbar">
+                        <img src="images/logob.png" alt="La Básica Logo" class="header_logo">
+
+        <nav class="navbar-menu">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Buscar...">
+                <div class="search-icon">
+                    <svg width="24" height="24" viewBox="0 -3 24 24" fill="currentColor">
+                        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="user-actions">
+                <a href="/profile" aria-label="Perfil">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                    </svg>
+                </a>
+                <a href="/cart" aria-label="Carrito">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L21.7 4H5.21l-.94-2H1zm16 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                    </svg>
+                </a>
+                <div class="navbar-hamburger hamburger-toggle" id="hamburger">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="mobile-controls">
+            <div class="user-actions">
+                <a href="/profile" aria-label="Perfil">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                    </svg>
+                </a>
+                <a href="/cart" aria-label="Carrito">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L21.7 4H5.21l-.94-2H1zm16 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="navbar-hamburger hamburger-toggle" id="hamburger-mobile">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="navbar-mobile" id="mobileMenu">
+        <a href="/work">INICIO</a>
+        <a href="/company">MOSTRADOR</a>
+        <a href="/culture">TORTAS</a>
+        <a href="/research">NOSOTROS</a>
+        <a href="/careers">PROXIMAMENTE !!</a>
+        <a href="/contact">CONTACTO</a>
+
+        <div class="mobile-separator"></div>
+
+        <div class="mobile-initiatives">
+            <h3>INITIATIVES</h3>
+            <div class="social-icons">
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </a>
+                <a href="https://wa.me/" target="_blank" aria-label="WhatsApp">
+                    <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+         <div class="section-wrap-trackrecord">
+
+        <!-- Indicador de progreso -->
+        <div class="scroll-indicator">
+            <div class="scroll-dot active" data-section="0"></div>
+            <div class="scroll-dot" data-section="1"></div>
+            <div class="scroll-dot" data-section="2"></div>
+        </div>
+
+        <!-- Contenedor de secciones -->
+        <div class="sections-container">
+            <!-- Sección 1: Nosotros -->
+            <section class="fullscreen-section white-bg">
+                <div class="two-column-layout">
+                    <div class="title-column">
+                        <h2 class="section-title">NOSOTROS</h2>
+                        <p class="description">
+                            En La Básica creemos que los momentos más dulces de la vida merecen ser celebrados con sabores auténticos. Desde 2010, elaboramos cada torta, pastel y delicia con ingredientes de primera calidad y el amor de quienes hacemos de la repostería un arte.
+                        </p>
+                        <div class="stats-container">
+                            <div class="stat-item">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label">Años de experiencia</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">5000+</span>
+                                <span class="stat-label">Clientes felices</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-column">
+                        <div class="organic-frame organic-frame-1">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop&crop=center"
+                             alt="Pastelería La Básica"
+                             class="content-image loading"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    </div>
+                </div>
+            </div>
+            </section>
+
+            <!-- Sección 2: Nuestros Productos -->
+            <section class="fullscreen-section brown-bg">
+                <div class="two-column-layout reverse-layout">
+                    <div class="content-column">
+                        <div class="organic-frame organic-frame-2">
+
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&h=400&fit=crop&crop=center"
+                             alt="Tortas artesanales"
+                             class="content-image loading"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        </div>
+                    </div>
+                    <div class="title-column segundo-responsive">
+                        <h2 class="section-title2">NUESTROS PRODUCTOS</h2>
+                        <p class="description">
+                            Especializados en tortas personalizadas, cupcakes gourmet, tartas de frutas frescas y postres clásicos. Cada creación es única y está pensada para hacer especial tu celebración. Trabajamos con recetas familiares y técnicas artesanales.
+                        </p>
+                        <div class="features-list">
+                            <div class="feature-item">✨ Tortas personalizadas</div>
+                            <div class="feature-item">🧁 Cupcakes gourmet</div>
+                            <div class="feature-item">🍰 Postres clásicos</div>
+                            <div class="feature-item">🎂 Eventos especiales</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección 3: Nuestra Filosofía -->
+            <section class="fullscreen-section white-bg">
+                <div class="two-column-layout">
+                    <div class="title-column">
+                        <h2 class="section-title">NUESTRA FILOSOFÍA</h2>
+                        <p class="description">
+                            Creemos que cada ocasión especial merece un sabor único. Por eso, seleccionamos cuidadosamente cada ingrediente y dedicamos tiempo a perfeccionar cada receta. Nuestro compromiso es crear no solo postres, sino momentos inolvidables.
+                        </p>
+                        <div class="values-container">
+                            <div class="value-item">
+                                <h4>Calidad Premium</h4>
+                                <p>Solo ingredientes de primera calidad</p>
+                            </div>
+                            <div class="value-item">
+                                <h4>Frescura Diaria</h4>
+                                <p>Elaboración artesanal cada día</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-column">
+                        <div class="organic-frame organic-frame-3">
+                        <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=600&h=400&fit=crop&crop=center"
+                             alt="Ingredientes frescos"
+                             class="content-image loading"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+        <section class="content-section">
+            <!-- Map Section -->
+            <div class="map-section">
+                <div class="section-header">
+                    <h3 class="section-title-m">¿DONDE ESTAMOS?</h3>
+                    <div class="map-info">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="info-content">
+                                <h4>La Básica Pastelería</h4>
+                                <p>Saavedra, Capital Federal.</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="info-content">
+                                <h4>Horarios</h4>
+                                <p>Lun - Dom: 8:00 - 22:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <div class="map-wrapper">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.2009655431107!2d-58.48629602350566!3d-34.54846675458373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb78124267c29%3A0x116fe56d6ecfb772!2sLa%20B%C3%A1sica%20Pasteler%C3%ADa!5e0!3m2!1ses!2sar!4v1751563155307!5m2!1ses!2sar"
+                            width="100%"
+                            height="400"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Ubicación de La Básica Pastelería">
+                        </iframe>
+                        <div class="map-overlay">
+                            <button class="directions-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <path d="M3 11l19-9-9 19-2-8-8-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Cómo llegar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contact & Newsletter Section -->
+    <section id="contact" class="contact_wrap">
+        <div class="contact_marquee">
+            <div class="contact_marquee_scroll is-top">
+                <div class="contact_marquee_text">¡Sí, somos básicos… básicamente irresistibles!</div>
+                <div class="contact_marquee_text">¡Sí, somos básicos… básicamente irresistibles!</div>
+                <div class="contact_marquee_text">¡Sí, somos básicos… básicamente irresistibles!</div>
+                <div class="contact_marquee_text">¡Sí, somos básicos… básicamente irresistibles!</div>
+                <div class="contact_marquee_text">¡Sí, somos básicos… básicamente irresistibles!</div>
+                <div class="contact_marquee_text">¡Sí, somos básicos… básicamente irresistibles!</div>
+            </div>
+        </div>
+
+        <section class="newsletter-section">
+            <div class="newsletter-container">
+                <div class="newsletter-content">
+                    <h2 class="newsletter-title">
+                        SUSCRÍBETE A NUESTRO<br>
+                        NEWSLETTER
+                    </h2>
+                    <p class="newsletter-description">
+                        Mantente al día con nuestros descuentos<br>
+                        exclusivos y promociones.
+                    </p>
+                </div>
+
+                <div class="newsletter-form-container">
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input
+                                type="email"
+                                class="newsletter-input"
+                                placeholder="Correo electrónico"
+                                required
+                            >
+                            <button type="submit" class="newsletter-button">
+                                SUSCRIBIRSE
+                            </button>
+                        </div>
+                    </form>
+
+                    <div class="newsletter-privacy">
+                        <a href="#" class="privacy-link">Política de Privacidad</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="contact_marquee">
+            <div class="contact_marquee_scroll is-bottom">
+                <div class="contact_marquee_text">La vida es corta. </div>
+                <div class="contact_marquee_text">Sé básica, comé torta.</div>
+                <div class="contact_marquee_text">La vida es corta.</div>
+                <div class="contact_marquee_text">Sé básica, comé torta.</div>
+                <div class="contact_marquee_text">La vida es corta.</div>
+                <div class="contact_marquee_text">Sé básica, comé torta.</div>
+                <div class="contact_marquee_text">La vida es corta. </div>
+                <div class="contact_marquee_text">Sé básica, comé torta.</div>
+                <div class="contact_marquee_text">La vida es corta.</div>
+                <div class="contact_marquee_text">Sé básica, comé torta.</div>
+                <div class="contact_marquee_text">La vida es corta.</div>
+                <div class="contact_marquee_text">Sé básica, comé torta.</div>
+                <div class="contact_marquee_text">La vida es corta. </div>
+                <div class="contact_marquee_text">Sé básica, comé torta.</div>
+                <div class="contact_marquee_text">La vida es corta.</div>
+                <div class="contact_marquee_text">Sé básica, comé torta.</div>
+                <div class="contact_marquee_text">La vida es corta.</div>
+                <div class="contact_marquee_text">Sé básica, comé torta.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer_wrap">
+        <div class="footer_bg">
+            <div class="footer_contain">
+                <div class="footer_layout">
+                    <div class="footer_links_wrap">
+                        <div class="footer_links_top">
+                            <div class="footer_link_column">
+                                <a href="#recetas" class="footer_link">
+                                    <div>RECETAS</div>
+                                </a>
+                                <a href="#servicios" class="footer_link">
+                                    <div>SERVICIOS</div>
+                                </a>
+                                <a href="#nosotros" class="footer_link">
+                                    <div>NOSOTROS</div>
+                                </a>
+                                <a href="/contacto" class="footer_link">
+                                    <div>CONTACTO</div>
+                                </a>
+                            </div>
+                            <div class="footer_link_column">
+                                <a href="https://www.instagram.com/labasica/" target="_blank" class="footer_link">
+                                    <div>instagram</div>
+                                </a>
+                                <a href="https://www.tiktok.com/@labasica" target="_blank" class="footer_link">
+                                    <div>whatsapp</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer_links_bottom">
+                            <div>©la básica 2025 • términos • privacidad</div>
+                            <div>website by <a href="https://www.ethansuero.com/" target="_blank" class="u-text-link">ethan suero</a></div>
+                        </div>
+                    </div>
+                    <div class="footer_logo">
+                        <img src="images/logob.png" alt="La Básica Logo" class="footer_logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript Modules -->
+    <script src="scripts/loader.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/nosotros.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
